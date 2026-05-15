@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meeting Notes AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+<div class="container">
+
+    <h1>✨ Meeting Notes AI</h1>
+    <p class="subtitle">Turn transcripts into smart summaries & tasks</p>
+
+    <div class="input-section">
+        <textarea id="transcript" placeholder="Paste your meeting transcript here..."></textarea>
+        <button onclick="generateNotes()">Generate Notes</button>
+        <button onclick="loadMeetings()">View Meetings</button>
+        <input type="number" id="searchId" placeholder="Enter Meeting ID">
+<button onclick="searchMeeting()">Search</button>
+    </div>
+
+    <div class="output-section">
+
+        <div class="card">
+            <h3>📝 Summary (Editable)</h3>
+            <textarea id="summary"></textarea>
+        </div>
+
+        <div class="card">
+            <h3>✅ Action Items</h3>
+            <ul id="actions"></ul>
+        </div>
+
+        <div class="card">
+            <h3>📂 Previous Meetings</h3>
+            <ul id="meetingsList"></ul>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="flowers"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

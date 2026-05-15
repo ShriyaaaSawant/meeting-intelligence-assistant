@@ -1,0 +1,167 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f3e8ff, #ede9fe);
+    margin: 0;
+    transition: 0.4s;
+}
+
+/* 🌙 Dark mode */
+body.dark {
+    background: linear-gradient(135deg, #1e1b4b, #312e81);
+    color: white;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #6b21a8;
+}
+
+body.dark h1 {
+    color: #c4b5fd;
+}
+
+.subtitle {
+    color: #7c3aed;
+}
+
+/* input */
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #d8b4fe;
+    background: #faf5ff;
+    margin-bottom: 10px;
+}
+
+/* ✅ FIX textarea in dark */
+body.dark textarea {
+    background: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+/* button */
+button {
+    padding: 12px;
+    border: none;
+    background: linear-gradient(135deg, #a78bfa, #c084fc);
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* cards */
+.card {
+    background: rgba(255,255,255,0.8);
+    padding: 15px;
+    border-radius: 16px;
+    margin-top: 20px;
+}
+
+/* ✅ FIX card text contrast */
+body.dark .card {
+    background: rgba(0,0,0,0.3);
+    color: #ffffff;
+}
+
+/* action items */
+li {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f5f3ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ✅ FIX list visibility in dark */
+body.dark li {
+    background: #2a2a2a;
+    color: #ffffff;
+}
+
+/* done items */
+li.done {
+    text-decoration: line-through;
+    color: #031c4e;
+    opacity: 1;
+}
+
+/* ✅ FIX done text in dark */
+body.dark li.done {
+    color: #bbbbbb;
+}
+
+/* status button */
+.status-btn {
+    margin-top: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: #a78bfa;
+    color: white;
+}
+
+.status-btn:hover {
+    background: #8b5cf6;
+}
+
+/* toggle button */
+.theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+}
+
+/* 🌸 floating flowers */
+.flowers::before {
+    content: "🌸 🌼 💜 🌷 🌺";
+    position: fixed;
+    width: 100%;
+    animation: float 12s linear infinite;
+    opacity: 0.3;
+}
+
+@keyframes float {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(100%); }
+}
+
+/* extra */
+.done {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+#meetingsList li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#meetingsList li:hover {
+    opacity: 0.8;
+}
+
+/* ✅ FIX small text (summary preview) */
+body.dark small {
+    color: #cccccc;
+}
+
+button.small {
+    margin-top: 5px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
