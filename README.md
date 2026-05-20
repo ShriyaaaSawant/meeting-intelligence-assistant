@@ -34,10 +34,11 @@ This project was built to demonstrate practical full-stack engineering with a re
 ## 📸 Application Preview
 
 ### Home Page
-<img src="screenshots/home.png" alt="Home Page" width="850"/>
+<img src="meeting-notes-frontend/screenshots/home.png" alt="Home Page" width="850"/>
+
 
 ### Action Item Tracking
-<img src="screenshots/action-items.png" alt="Action Items" width="850"/>
+<img src="meeting-notes-frontend/screenshots/action-items.png" alt="Action Items" width="850"/>
 
 
 ## 🛠 Tech Stack
